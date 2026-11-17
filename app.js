@@ -9,6 +9,7 @@ const ME = {
   location: "Ramat Gan, Israel",
   email: "talitaliya3002@gmail.com",
   links: [
+    { label: "+972 54-471-6350", url: "tel:+972544716350" },
     { label: "WhatsApp", url: "https://wa.me/972544716350" },
     { label: "Behance", url: "https://www.behance.net/taliyaserdeze" },
     // add more, e.g. { label: "LinkedIn", url: "https://www.linkedin.com/in/..." },
@@ -308,7 +309,7 @@ function contactSection() {
       <a class="contact__big reveal" href="mailto:${esc(ME.email)}">Want to work together? Email me</a>
       <div class="contact__links reveal">
         <a href="mailto:${esc(ME.email)}">${esc(ME.email)}</a>
-        ${ME.links.map((l) => `<a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label)}</a>`).join("")}
+        ${ME.links.map((l) => `<a href="${esc(l.url)}"${l.url.startsWith("http") ? ' target="_blank" rel="noopener"' : ""}>${esc(l.label)}</a>`).join("")}
       </div>
       <div class="footer"><span>© ${new Date().getFullYear()} ${esc(ME.name)}</span><span>${esc(ME.role)} · ${esc(ME.location)}</span></div>
     </div>
