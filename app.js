@@ -359,8 +359,8 @@ function homeView() {
       <div>
         <p class="about__big reveal">I start with pencil and paper, then move to <em>Figma</em>.</p>
         <div class="photos reveal">
-          <figure class="photo photo--a"><img src="img/me-portrait.jpg" alt="Portrait of ${esc(ME.first)}" loading="lazy"></figure>
-          <figure class="photo photo--b"><img src="img/me-grey.jpg" alt="Portrait of ${esc(ME.first)} smiling" loading="lazy"><figcaption>hi there ✿</figcaption></figure>        </div>
+          <figure class="photo"><img src="img/me-grey.jpg" alt="Portrait of ${esc(ME.first)} smiling" loading="lazy"><figcaption>hi there ✿</figcaption></figure>
+        </div>
       </div>
       <div class="reveal">
         ${ME.about.map((p) => `<p>${esc(p)}</p>`).join("")}
