@@ -18,8 +18,8 @@ const ME = {
   intro:
     "I design UI for games and apps, like party games, dashboards and online shops.",
   about: [
-    "I like to start on paper. I sketch, map the flows, make wireframes in Figma and keep testing until it's easy to use.",
-    "Right now I'm designing the 2D UI and the art direction for Bowling With Friends, a multiplayer game. I'm also studying architecture at Bezalel, and it helps me think about layout and how people move through a screen.",
+    "I sketch first, then map the flows and make wireframes, and I keep testing until it's easy to use.",
+    "Right now I'm designing the 2D UI and the art direction for Bowling With Friends, a multiplayer game. I'm also studying architecture at Bezalel, and it taught me a lot about layout.",
   ],
   skills: {
     Design: ["UI design", "Game UI & 2D game assets", "Art direction & style guides", "User flows & wireframes", "Prototypes in Figma"],
@@ -27,7 +27,7 @@ const ME = {
   },
   experience: [
     { when: "2024 - now", what: "Freelance Graphic & UI/UX Designer", where: "Strangely Interactive Ltd (UK): 2D UI and art direction for Bowling With Friends. Compugraphic Ltd: UI/UX for the Mental Fitness Control Center." },
-    { when: "Military", what: "Soldier Welfare NCO", where: "IDF" },
+    { when: "Service", what: "Soldier Welfare NCO", where: "IDF" },
   ],
   education: [
     { when: "2025 - now", what: "Architecture", where: "Bezalel Academy of Arts and Design" },
@@ -52,7 +52,7 @@ const CARDS = [
   ["BasketballStand", "Basketball Heap", "Toss bouncy basketballs onto the lane to disrupt the shot."],
   ["Bigger", "Big Ball", "Grow your ball, or send a giant ball against the bowler."],
   ["Deadwood", "Deadwood", "Throw loose pins to hit obstacles or block the bowling ball."],
-  ["Dynamite", "Dynamite", "Launch dynamite to blast obstacles and disrupt the competition."],
+  ["Dynamite", "Dynamite", "Launch dynamite to blast obstacles and mess up the competition."],
   ["Explode", "Explosive Ball", "Give your ball, or a chosen object, an explosive surprise."],
   ["Force", "The Force", "Place a powerful pusher to redirect balls and obstacles."],
   ["GoalKeeper", "Goal Keeper", "Add a foosball kicker to your ball, or guard the lane."],
@@ -101,7 +101,7 @@ const PROJECTS = [
         kicker: "Art direction",
         title: "Friendly cards in a retro bowling alley",
         body: [
-          "I chose the style: warm paper colour, round dark outlines, flat colours and one big drawing on each card. I drew reference sheets by hand to set the style, then directed the 22 card illustrations and checked each one against my references.",
+          "I chose the style: warm paper colour, round dark outlines, flat colours and one big drawing on each card. I drew reference sheets by hand to set the style, then directed the 22 card illustrations and checked each one against my references. The card art has no text in it, so the titles stay as live text and are easy to translate.",
           "The same colours (teal, cream, coral and red) are on the cards, the shop and the 3D alley. For the alley I picked the colours and the retro mood, and the 3D artists modelled it.",
         ],
       },
@@ -114,7 +114,6 @@ const PROJECTS = [
           "The hand: your cards fanned out at the bottom of the screen.",
           "The HUD: aim and power bars, and a small pin triangle that empties when pins fall.",
           "The scoreboard, the main menu buttons (light and dark), the pause icon and the character icons.",
-          "No text inside the card art, so the titles stay as live text and are easy to translate.",
         ],
       },
     ],
@@ -214,7 +213,7 @@ const PROJECTS = [
     sections: [
       {
         kicker: "The challenge",
-        title: "A bakery site that feels warm",
+        title: "Fun, but easy to order",
         body: [
           "People buy cakes for birthdays and events, so I wanted the site to feel warm and fun, but still quick to order from.",
         ],
@@ -232,8 +231,8 @@ const PROJECTS = [
       },
     ],
     process: [
-      { t: "Moodboard", d: "I collected inspiration on its own page." },
-      { t: "Thinking page", d: "I planned the pages and the flow: home, category, product, cart." },
+      { t: "Moodboard", d: "I collected reference images on one board." },
+      { t: "Sitemap", d: "I planned the pages and the flow: home, category, product, cart." },
       { t: "Drafts", d: "I tried layouts and graphics before choosing the style." },
       { t: "Final pages", d: "I designed the final pages and linked them into a prototype." },
     ],
@@ -241,7 +240,7 @@ const PROJECTS = [
       { kind: "page", src: "img/sweet-home.jpg", title: "Home page", note: "The story first, then the products and how to order.", url: "crazycake.shop" },
       { kind: "page", src: "img/sweet-category.jpg", title: "Cupcakes category", note: "All the cupcakes on one page.", url: "crazycake.shop/cupcakes" },
       { kind: "page", src: "img/sweet-product.jpg", title: "Product page", note: "Price, details, allergens and a gallery.", url: "crazycake.shop/cupcakes/chocolate" },
-      { kind: "page", src: "img/sweet-cart.jpg", title: "Cart", note: "A short last step.", url: "crazycake.shop/cart" },
+      { kind: "page", src: "img/sweet-cart.jpg", title: "Cart", note: "Total and checkout always visible.", url: "crazycake.shop/cart" },
     ],
     prototype: "https://www.figma.com/proto/m3xZaIAuhBEUzk0zYU06tN?node-id=58-879",
   },
@@ -257,7 +256,7 @@ const PROJECTS = [
       "A calm landing page for a tea and herbs shop, with products, a story, a club sign-up and the stores.",
     lead:
       "A landing page for a tea and herbal medicine shop. This is a study concept I made in my course, not a real project for Teavana.",
-    meta: { Role: "UI/UX Designer", Type: "Landing page (concept)", Platform: "Desktop web", Tools: "Figma, components" },
+    meta: { Role: "UI/UX Designer", Type: "Landing page (concept)", Platform: "Desktop web", Tools: "Figma" },
     sections: [
       {
         kicker: "The brief",
@@ -358,7 +357,7 @@ function homeView() {
   <section class="section" id="about" style="padding-top:0">
     <div class="wrap about">
       <div>
-        <p class="about__big reveal">I sketch on paper first, then build it in Figma until it feels <em>obvious</em>.</p>
+        <p class="about__big reveal">I start with pencil and paper, then move to <em>Figma</em>.</p>
         <div class="photos reveal">
           <figure class="photo photo--a"><img src="img/me-portrait.jpg" alt="Portrait of ${esc(ME.first)}" loading="lazy"></figure>
           <figure class="photo photo--b"><img src="img/me-grey.jpg" alt="Portrait of ${esc(ME.first)} smiling" loading="lazy"><figcaption>hi there ✿</figcaption></figure>        </div>
@@ -393,7 +392,7 @@ function homeView() {
         <h2 class="section__title reveal">I also <em>paint</em></h2>
         <span class="section__note reveal">click a painting to see it big</span>
       </div>
-      <p class="art__intro reveal">When I'm not in Figma I paint. I love thick texture, and I build fruit and flowers in relief on the canvas. I think you can see it in my UI too, I like warm colours and hand-made details.</p>
+      <p class="art__intro reveal">When I'm not in Figma I paint. I love thick texture, and I build fruit and flowers in relief on the canvas. I like warm colours and hand-made details, in paintings and in UI.</p>
       <div class="art__grid">
         ${ART.map((a) => `
           <figure class="art__item reveal${a.tall ? " is-tall" : ""}${a.wide ? " is-wide" : ""}${a.fit ? " is-fit" : ""}" tabindex="0" role="button" aria-label="View full image: ${esc(a.alt)}">
